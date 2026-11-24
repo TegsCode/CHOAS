@@ -1,0 +1,6 @@
+{
+  "name": "CHAOS",
+  "description": "A 2.5D physics arena brawler with momentum-driven movement, grappling, ragdoll knockback, and automatic movement-combo Mechs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    background-color: #1b1722;
+    color: #f4ead5;
+  }
+}
+
+.font-display {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+}
+
+.font-hand {
+  font-family: "Patrick Hand", cursive, sans-serif;
+}
+
+.font-mono-num {
+  font-family: "JetBrains Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.ink-panel {
+  background-color: #25202e;
+  border: 2.5px solid #120e17;
+  box-shadow: 4px 4px 0px #120e17;
+}
+
+.ink-paper {
+  background-color: #f4ead5;
+  color: #18131d;
+  border: 2.5px solid #120e17;
+  box-shadow: 4px 4px 0px #120e17;
+}
+
+.ink-shadow-sm {
+  box-shadow: 2px 2px 0px #120e17;
+}
+
+@keyframes mechPop {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) rotate(-2deg) scale(0.9);
+  }
+  18% {
+    opacity: 1;
+    transform: translateY(0) rotate(-1deg) scale(1.05);
+  }
+  82% {
+    opacity: 1;
+    transform: translateY(0) rotate(-1deg) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-8px) rotate(0deg) scale(0.95);
+  }
+}
+
+.animate-mech-pop {
+  animation: mechPop 1.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
